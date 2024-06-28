@@ -16,7 +16,7 @@ conn = mysql.connector.connect(
 # Create a cursor object to interact with the database
 cursor = conn.cursor()
 
-cursor.execute("SELECT name, population FROM states ORDER BY population DESC LIMIT 2")
+cursor.execute("SELECT name, population FROM states ORDER BY population DESC LIMIT 1")
 
 results = cursor.fetchall()
 
@@ -25,3 +25,5 @@ for result in results:
     
 cursor.close()
 conn.close()
+
+

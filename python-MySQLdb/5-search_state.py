@@ -34,33 +34,3 @@ cursor.close()
 conn.close()
 
 
-
-
-
-
-
-
-# if __name__ == "__main__":
-#     username = sys.argv[1]
-#     password = sys.argv[2]
-#     dbname = sys.argv[3]
-#     state_name = sys.arg[4]
-  
-# db = MySQLdb.connect(
-#     host = "localhost",
-#     user = "root",
-#     password= "password",
-#     db = "US_States"
-# )
-
-# cursor = db.cursor()
-
-# cursor.execute("INSERT INTO states (name, abbreviation, capital, population, year_admitted) VALUES('NURENBURG', 'NU', 'Frankfurt', 4903184, 1818)")
-
-# results = cursor.fetchall()
-
-# for result in results:
-#     print(result)
-    
-# cursor.close()
-# db.close()
